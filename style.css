@@ -84,13 +84,17 @@ font-size: 16px;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 24px;
 }
+.course-fabric{
+    border: 1px solid #ffffff;
+    border-radius: 13.36px;
+}
 .course .course-baner img{
     width: 224px;
     height: 104px;
 }
 .course-info{
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     justify-content: space-between;
 }
 .fa-star{
@@ -101,6 +105,15 @@ font-size: 16px;
 }
 .fa-star.emty{
     color: #aeaeae;
+}
+.course-design{
+    border: 1px solid #FF4A60;
+    background-color: #FF4A60;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 2px;
+    
 }
 
 /* Media quares */

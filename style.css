@@ -24,7 +24,10 @@ main{
     border-radius: 20px;
    
 }
-
+.nav-menu:hover{
+    background-color: orange;
+    cursor: pointer;
+}
 .nav-logo img{
     width: 40px;
     height: 51px;
@@ -58,7 +61,7 @@ main{
     font-size: 16px;
     color: #ffffff;
     font-weight: 600;
-    margin-left: 10px;
+    margin-left: 15px;
 }
 
  /* header style End................ */
@@ -160,8 +163,8 @@ font-size: 16px;
     color: #aeaeae;
 }
 .course-design{
-    border: 1px solid #FF4A60;
-    background-color: #FF4A60;
+    border: 1px solid #ff4a5f63;
+    background-color: #ff4a5f63;
     border-radius: 8px;
     font-size: 14px;
     font-weight: 600;
@@ -172,13 +175,13 @@ font-size: 16px;
 /* Media quares */
 /* mobile device */
 @media only screen and (max-width:688px) {
-    .container, header{
+    .container, .nav-menu{
         width: 100%;
     }
     .players, .blogs, .courses, .nav-menu{
         grid-template-columns: repeat(1, 1fr);
     }
-    .player, .blogs, .nav-menu{
+    .player, .blogs,{
         flex-direction: column;
     }
    
@@ -186,10 +189,11 @@ font-size: 16px;
 }
 /* tablet devices */
 @media only screen and (min-width: 688px) and (max-width: 992px) {
-    .container{
+    .container, .nav-menu{
         width: 100%;
     }
-    .players, .courses{
+    .players, .courses, .nav-menu{
         grid-template-columns: repeat(2, 1fr);
+        
     }
 }

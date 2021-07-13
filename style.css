@@ -10,6 +10,59 @@ main{
     flex-direction: column;
     align-items: center;
 }
+/* Header style */
+
+
+.nav-menu{
+   
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 430px;
+    width: 100%;
+    height: 94px;
+    background-color: #562EFF;
+    border-radius: 20px;
+   
+}
+
+.nav-logo img{
+    width: 40px;
+    height: 51px;
+    margin-left: 140px;
+    margin-top: 26px;
+}
+#idea{
+    font-size: 28px;
+    font-weight: 800;
+    color: #ffffff;
+}
+.nav-links:hover a{
+    border-bottom: 2px solid red;
+}
+.nav-logo:hover #idea{
+    border-bottom: 2px solid black;
+    cursor: pointer;
+    color: brown;
+}
+.nav-links img{
+    width: 40px;
+    height: 51px;
+    margin-top: 26px; 
+    
+    
+}
+
+
+.nav-links a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+ /* header style End................ */
+
 .container{
     background-color: #ffffff;
     width: 870px;
@@ -119,13 +172,13 @@ font-size: 16px;
 /* Media quares */
 /* mobile device */
 @media only screen and (max-width:688px) {
-    .container{
+    .container, header{
         width: 100%;
     }
-    .players, .blogs, .courses{
+    .players, .blogs, .courses, .nav-menu{
         grid-template-columns: repeat(1, 1fr);
     }
-    .player, .blogs{
+    .player, .blogs, .nav-menu{
         flex-direction: column;
     }
    
